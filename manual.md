@@ -2,16 +2,20 @@ Step 1: Send a normal request to the live service
 The service is deployed and accessible at the public URL. To observe its normal behavior, send a single POST request to the /vulnerable endpoint.
 On macOS or Linux, open a terminal and run:
 
+```bash
 curl -X POST https://cloudfunctionexpolitdetector.onrender.com/vulnerable \
   -H "Content-Type: application/json" \
   -d '{"hello":"world"}'
+```
 
 On Windows, open PowerShell and run:
 
+```powershell
 Invoke-RestMethod -Uri "https://cloudfunctionexpolitdetector.onrender.com/vulnerable" `
   -Method POST `
   -Body '{"hello":"world"}' `
   -ContentType "application/json"
+```
 
 The service responds with:
 {"status":"processed"}
