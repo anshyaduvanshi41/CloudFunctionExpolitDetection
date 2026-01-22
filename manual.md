@@ -1,3 +1,5 @@
+Since, I don't have access of GCP Cloud Function (need billing), I did the project with an alternative way.
+
 Step 1: Send a normal request to the live service
 The service is deployed and accessible at the public URL. To observe its normal behavior, send a single POST request to the /vulnerable endpoint.
 On macOS or Linux, open a terminal and run:
